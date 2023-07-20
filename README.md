@@ -3,4 +3,3 @@
 도전!
 C언어
 Java
-Python
