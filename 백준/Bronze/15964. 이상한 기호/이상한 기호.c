@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int hj(int a, int b) { return (a + b) * (a - b); }
+long long hj(long long a, long long b) { return (a + b) * (a - b); }
 
 int main() {
-  int a, b;
+  long long a, b;
 
-  scanf("%d %d", &a, &b);
+  scanf("%lld %lld", &a, &b);
 
-  printf("%d", hj(a, b));
+  printf("%lld", hj(a, b));
   return 0;
 }
