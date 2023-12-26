@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main() {
+  long long M = 1234567891;
   int n;
   char str[50];
 
@@ -9,18 +10,17 @@ int main() {
   scanf("%s", str);
 
   int res = 0;
-  int ar;
+  int a;
+  long long r = 1;
   for (int i = 0; i < n; i++) {
-    ar = (str[i] - 96);
+    a = str[i] - 96;
 
-    for (int j = 0; j < i; j++) {
-      ar *= 31;
-    }
+    res = (res + a * r) % M;
 
-    res += ar;
+    r = (r * 31) % M;
   }
 
-  res %= 1234567891;
+  res %= M;
 
   printf("%d\n", res);
 
