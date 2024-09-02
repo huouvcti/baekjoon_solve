@@ -10,5 +10,4 @@ int main(){
             now->tm_mon + 1, now->tm_mday);
             
 	return 0;
-    return 0;
 }
